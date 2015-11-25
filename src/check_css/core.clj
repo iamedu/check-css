@@ -51,7 +51,7 @@
           (swap! total-count + (count elements))
           (recur))
         (>! out-ch @total-count)))
-    (b/exec-site-fn urls apply-script-fn)
+    (b/exec-site-fn urls apply-script-fn :driver {:browser browser})
     (close! ch)
     (println "There are " (<!! out-ch) " total elements affected by that class!")))
 

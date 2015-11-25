@@ -8,6 +8,7 @@
                  [org.clojure/core.async "0.2.374"]
                  [clj-webdriver "0.7.2"]
                  [org.seleniumhq.selenium/selenium-java "2.47.1"]
+                 [org.seleniumhq.selenium/selenium-remote-driver "2.47.1"]
                  [com.codeborne/phantomjsdriver "1.2.1"
                                                 :exclusion [org.seleniumhq.selenium/selenium-java
                                                             org.seleniumhq.selenium/selenium-server

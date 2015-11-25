@@ -4,7 +4,8 @@
             [clojure.java.io :as io]))
 
 (defn exec-site-fn [urls f & {:keys [driver]
-                              :or {:driver {:browser :chrome}}}]
+                              :or {driver {:browser :chrome}}}]
+  (println driver)
   (taxi/with-driver driver
     (doseq [url urls]
       (taxi/to url)
