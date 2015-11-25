@@ -5,6 +5,7 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.7.0"]
                  [org.clojure/tools.cli "0.3.3"]
+                 [org.clojure/core.async "0.2.374"]
                  [clj-webdriver "0.7.2"]
                  [org.seleniumhq.selenium/selenium-java "2.47.1"]
                  [com.codeborne/phantomjsdriver "1.2.1"
